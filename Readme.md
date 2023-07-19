@@ -1,4 +1,6 @@
-## Task Name: Excel Sheet Column Letter to Column Number And Viseversa.
+## Task Name: Excel Sheet Column Letter to Column Number And Vice Versa.
+
+Pick from C#, JavaScript or PHP to complete this task, it can be done in any IDE.
 
 1. __PART 1__: Given a string (columnTitle) that represents the column title as it appears in an Excel sheet, return its corresponding column number.
 
