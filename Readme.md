@@ -28,3 +28,17 @@ Example:
  | 676   | YZ     |
  | 702   | ZZ     |
  | 705   | AAC    |
+
+
+## Usage
+
+### Test from console 
+```shell
+php ./index.php A 1 76 AAZ 
+```
+
+### Run test
+
+```shell
+./vendor/bin/phpunit ./tests/ExcelConverter/*
+```
