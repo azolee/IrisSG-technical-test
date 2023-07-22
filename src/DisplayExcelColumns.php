@@ -3,7 +3,7 @@
 namespace IrisSG\Test;
 
 use IrisSG\Test\Strategies\DisplayExcelColumnTitleNumberPairInterface;
-use IrisSG\Test\Strategies\DisplayOnTerminalStrategy;
+use IrisSG\Test\Strategies\DisplayOnTerminal;
 
 class DisplayExcelColumns
 {
@@ -11,7 +11,7 @@ class DisplayExcelColumns
      * @param DisplayExcelColumnTitleNumberPairInterface $displayStrategy
      */
     public function __construct(
-        protected DisplayExcelColumnTitleNumberPairInterface $displayStrategy = new DisplayOnTerminalStrategy()
+        protected DisplayExcelColumnTitleNumberPairInterface $displayStrategy = new DisplayOnTerminal()
     ) {}
 
     /**

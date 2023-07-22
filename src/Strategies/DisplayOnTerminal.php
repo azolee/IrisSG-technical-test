@@ -2,7 +2,7 @@
 
 namespace IrisSG\Test\Strategies;
 
-class DisplayOnTerminalStrategy implements DisplayExcelColumnTitleNumberPairInterface
+class DisplayOnTerminal implements DisplayExcelColumnTitleNumberPairInterface
 {
     public function format(string $columnToBeConverted, string $conversionResult): string
     {
