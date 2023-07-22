@@ -1,1 +1,0 @@
-{"version":1,"defects":{"ExcelConverter\\ExcelConverter::testExcelConverterConvertsCorrectly":7},"times":{"ExcelConverter\\ExcelConverter::testExcelConverterConvertsCorrectly":0.021,"ExcelConverter\\ExcelConverter::testMakeSureTheTestedStringIsNotCaseSensitive":0.005,"ExcelConverter\\ExcelConverterForTerminal::testConverterShowsTheExpectedResult":0.002}}
