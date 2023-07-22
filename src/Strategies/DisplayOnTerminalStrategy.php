@@ -1,8 +1,8 @@
 <?php
 
-namespace IrisSG\Test\Adapters;
+namespace IrisSG\Test\Strategies;
 
-class DisplayOnTerminalAdapter implements DisplayExcelColumnTitleNumberPairInterface
+class DisplayOnTerminalStrategy implements DisplayExcelColumnTitleNumberPairInterface
 {
     public function format(string $columnToBeConverted, string $conversionResult): string
     {

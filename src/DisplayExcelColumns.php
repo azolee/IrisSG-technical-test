@@ -2,16 +2,16 @@
 
 namespace IrisSG\Test;
 
-use IrisSG\Test\Adapters\DisplayExcelColumnTitleNumberPairInterface;
-use IrisSG\Test\Adapters\DisplayOnTerminalAdapter;
+use IrisSG\Test\Strategies\DisplayExcelColumnTitleNumberPairInterface;
+use IrisSG\Test\Strategies\DisplayOnTerminalStrategy;
 
 class DisplayExcelColumns
 {
     /**
-     * @param DisplayExcelColumnTitleNumberPairInterface $displayAdapter
+     * @param DisplayExcelColumnTitleNumberPairInterface $displayStrategy
      */
     public function __construct(
-        protected DisplayExcelColumnTitleNumberPairInterface $displayAdapter = new DisplayOnTerminalAdapter()
+        protected DisplayExcelColumnTitleNumberPairInterface $displayStrategy = new DisplayOnTerminalStrategy()
     ) {}
 
     /**
@@ -21,14 +21,14 @@ class DisplayExcelColumns
      */
     public function format(string $columnToBeConverted, string $conversionResult): string
     {
-        return $this->displayAdapter->format($columnToBeConverted, $conversionResult);
+        return $this->displayStrategy->format($columnToBeConverted, $conversionResult);
     }
 
     /**
-     * @param DisplayExcelColumnTitleNumberPairInterface $displayAdapter
+     * @param DisplayExcelColumnTitleNumberPairInterface $displayStrategy
      */
-    public function setDisplayAdapter(DisplayExcelColumnTitleNumberPairInterface $displayAdapter): void
+    public function setDisplayStrategy(DisplayExcelColumnTitleNumberPairInterface $displayStrategy): void
     {
-        $this->displayAdapter = $displayAdapter;
+        $this->displayStrategy = $displayStrategy;
     }
 }

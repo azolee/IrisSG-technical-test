@@ -1,6 +1,6 @@
 <?php
 
-namespace IrisSG\Test\Adapters;
+namespace IrisSG\Test\Strategies;
 
 interface DisplayExcelColumnTitleNumberPairInterface
 {

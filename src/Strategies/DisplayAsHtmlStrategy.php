@@ -1,8 +1,8 @@
 <?php
 
-namespace IrisSG\Test\Adapters;
+namespace IrisSG\Test\Strategies;
 
-class DisplayAsHtmlAdapter implements DisplayExcelColumnTitleNumberPairInterface
+class DisplayAsHtmlStrategy implements DisplayExcelColumnTitleNumberPairInterface
 {
     public function format(string $columnToBeConverted, string $conversionResult): string
     {
